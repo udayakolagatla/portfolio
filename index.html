@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udaya Sree Kolagatla | Portfolio</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+            color: #1A237E;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        h1, h2, h3 {
+            font-weight: bold;
+        }
+        section {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 30px;
+            width: 80%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        #landing {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .name {
+            font-family: 'Cursive', cursive;
+            font-size: 3.5rem;
+            color: #455f88;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .profile-pic {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px rgba(26, 35, 126, 0.5);
+            animation: scaleUp 1.5s ease-in-out;
+        }
+        @keyframes scaleUp {
+            from { transform: scale(0.8); }
+            to { transform: scale(1); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .project {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        .project a, .download-btn, .profile-links a {
+            display: inline-block;
+            background: #455f88;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .project a:hover, .download-btn:hover, .profile-links a:hover {
+            background: #2c3e5f;
+            transform: scale(1.1);
+        }
+        .profile-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <section id="landing">
+        <div class="center-content">
+            <img src="profile.jpg" alt="Udaya Sree Kolagatla" class="profile-pic">
+            <h1 class="name">Udaya Sree Kolagatla</h1>
+            <p>I am a passionate and curious with a strong interest in web development, programming, and emerging technologies. I enjoy building real-world projects and continuously learning to expand my technical skills. I'm always eager to take on new challenges and contribute meaningfully through creativity and logic.</p>
+
+        </div>
+    </section>
+    <section id="career-objective"><h2>Career Objective</h2><p><p>To obtain a challenging position as a Computer Science student intern where I can apply my knowledge of programming, software development, and problem-solving skills to real-world applications while continuing to learn and grow in a dynamic and collaborative environment.</p>
+    </p></section>
+    <section id="education"><h2>Education</h2>
+        <p>B.Tech - CGPA: 8.9</p>
+        <p>Intermediate - 78%</p>
+        <p>Class 10th - 562/600</p>
+    </section>
+    <section id="skills"><h2>Technical Skills & Tools</h2><p>C, Java, Python, HTML, CSS, JavaScript, React, SQL, Git, Linux</p></section>
+    <section id="projects"><h2>Mini Projects</h2>
+        <div class="projects-container">
+            <div class="project"><h3>To-Do List</h3><a href="video1.mp4" target="_blank">Watch Video</a></div>
+            <div class="project"><h3>Quiz App</h3><a href="video2.mp4" target="_blank">Watch Video</a></div>
+        </div>
+    </section>
+    <section id="certifications"><h2>Certifications</h2><p>AWS, Android, Networking, Web Development, Data Science</p></section>
+    <section id="profiles"><h2>Profiles</h2>
+        <div class="profile-links">
+            <a href="https://www.linkedin.com/in/udaya-kolagatla" target="_blank">LinkedIn</a>
+            <a href="https://github.com/udayakolagatla" target="_blank">GitHub</a>
+        </div>
+    </section>
+    <section id="resume-download"><h2>Download My Resume</h2>
+        <a href="resume.pdf" download class="download-btn">Download Resume</a>
+    </section>
+    <h2 id="thank-you">Thank You!</h2>
+</body>
+</html>
